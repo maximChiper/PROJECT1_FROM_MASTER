@@ -6,8 +6,8 @@ body{
     flex-direction: column;
 }
  label{
-     font-size: x-small;
-     font-weight: bolder ;
+     font-weight: bold ;
+     margin-top: 10px;
  }
 .bank-card{
     width: 300px;
@@ -126,13 +126,55 @@ body{
     align-items: flex-end;
     justify-content: space-between;
 }
-.form-month,
-.form-year {
-    display: inline;
-    margin-left: 30px;
-    margin-top: 5px;
-    width: 130px;
-    height: 30px;
-    border: 1px solid rgb(202, 202, 202);
-    padding-left: 5px;
+
+.month{
+    display: flex;
+    flex-direction: column;
+}
+.month select{
+    height: 40px;
+    width: 80px;
+}
+.year{
+    display: flex;
+    flex-direction: column;
+}
+.year select{
+    height: 40px;
+    width: 80px;
+}
+
+.cvc{
+    display: flex;
+    flex-direction: column;
+}
+.cvc input{
+    height: 35px;
+    width: 80px;
+    font-size: large;
+}
+.bottom-data{
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     height: 100px;
+    justify-content: space-between;
+ }
+.button{
+    color: white;
+    background: steelblue;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: medium;
+    border-radius: 5px;
+}
+.button-placement{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
