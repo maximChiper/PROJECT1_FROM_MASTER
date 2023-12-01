@@ -18,7 +18,7 @@ body{
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color
+
 }
 .sign-up-card{
     width: 400px;
@@ -90,7 +90,7 @@ body{
     margin-left: 10px;
     height: 30px;
     font-size: x-large;
-    font-style: normal;
+    color: white;
 }
 #name-on-card{
     width: 60%;
@@ -100,7 +100,39 @@ body{
     border-image: initial;
     margin-left: 10px;
     height: 20px;
-    font-size: x-large;
     background: transparent;
-    margin-top: 30px;
+    ;
+    color: white;
+}
+#year-mounth-on-card {
+    width: 20%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin-left: 10px;
+    height: 20px;
+    background: transparent;
+    color: white;
+    font-size: medium;
+    margin-right: 14px;
+}
+::placeholder{
+    color: white;
+}
+.fixate-on-end{
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.form-month,
+.form-year {
+    display: inline;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 130px;
+    height: 30px;
+    border: 1px solid rgb(202, 202, 202);
+    padding-left: 5px;
 }

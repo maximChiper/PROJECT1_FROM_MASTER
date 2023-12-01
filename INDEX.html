@@ -13,10 +13,13 @@
     <div class="logo2"></div>
     <div class="logo3"></div>
     </div>
+    <div>
     <input  id="nrs-on-card" type="text" placeholder="####  ####  ####  ####">
-
-<input id="name-on-card" type="text" placeholder="ADD NAME">
-
+     <div class="fixate-on-end">
+         <input id="name-on-card" type="text" placeholder="ADD NAME">
+         <input id="year-mounth-on-card"type="text" placeholder="MM/YY" name="input">
+    </div>
+    </div>
 
 </div>
 <div class="sign-up-card">
@@ -27,7 +30,32 @@
         <label>Card Name
             <input class="data-text">
         </label>
-    </div>
+        <select class="form-month" id="month" name="form_date">
+            <option value="">Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select class="form-year" id="year" name="form_date">
+        <option value="">Year</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        </select></div>
+
 </div>
 <script src="main.js"></script>
 </body>
