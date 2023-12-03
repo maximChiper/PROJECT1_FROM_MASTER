@@ -9,9 +9,9 @@
 <div class="bank-card">
     <div class="imgs-top">
         <img src="img/680284.png" class="chip">
-        <div class="logo"></div>
-        <div class="logo2"></div>
-        <div class="logo3"></div>
+        <div class="logo "></div>
+        <div class="logo2 "></div>
+        <div class="logo3 "></div>
     </div>
     <div>
         <input id="nrs-on-card" type="text" placeholder="####  ####  ####  ####">
@@ -21,11 +21,18 @@
         </div>
     </div>
 </div>
+<div class="bank-card-back">
+    <div class="black-line"></div>
+    <div class="wight-line">
+        <input type="text" class="cvc-on-card">
+    </div>
+    <div class="logo-on-back"></div>
+</div>
 
 <div class="sign-up-card">
     <div class="sign-up">
         <label>Card Number
-            <input class="data-text">
+            <input class="data-text" id='card-nr' type="text" maxlength="16">
         </label>
         <label>Card Name
             <input class="data-text">
@@ -64,7 +71,7 @@
             </div>
             <div class="cvc">
                 <label>CVC</label>
-                <input type="text">
+                <input type="text" maxlength="4">
             </div>
         </div>
         <div class="button-placement">
