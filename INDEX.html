@@ -14,10 +14,10 @@
         <div class="logo3 "></div>
     </div>
     <div>
-        <input id="nrs-on-card" type="text" placeholder="####  ####  ####  ####">
+        <input id="nrs-on-card" inputmode="numeric" type="text" placeholder="####  ####  ####  ####" disabled>
         <div class="fixate-on-end">
-            <input id="name-on-card" type="text" placeholder="ADD NAME">
-            <input id="year-mounth-on-card" type="text" placeholder="MM/YY" name="input">
+            <input id="name-on-card" type="text" placeholder="ADD NAME" disabled>
+            <input id="year-mounth-on-card" type="text" placeholder="MM/YY" name="input" maxlength="5">
         </div>
     </div>
 </div>
@@ -32,15 +32,15 @@
 <div class="sign-up-card">
     <div class="sign-up">
         <label>Card Number
-            <input class="data-text" id='card-nr' type="text" maxlength="16">
+            <input class="data-text"  id='card-nr'  type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
         </label>
         <label>Card Name
-            <input class="data-text">
+            <input class="data-text" id="card-name">
         </label>
         <div class="bottom-data">
             <div class="month">
                 <label>select mounth</label>
-                <select>
+                <select id="month">
                     <option value="">Month</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -58,7 +58,7 @@
             </div>
             <div class="year">
                 <label>select year</label>
-                <select>
+                <select id="year">
                     <option value="">Year</option>
                     <option value="2023">2023</option>
                     <option value="2024">2024</option>
