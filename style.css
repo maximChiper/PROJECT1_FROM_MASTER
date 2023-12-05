@@ -172,12 +172,24 @@ label {
 .cvc {
     display: flex;
     flex-direction: column;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
 }
+.cvc-on-card{
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background-color: white;
 
+}
 .cvc input {
     height: 35px;
     width: 80px;
     font-size: large;
+
 }
 
 .bottom-data {
@@ -263,7 +275,7 @@ label {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 

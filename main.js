@@ -37,8 +37,6 @@ txtCardNumber.addEventListener("input", (e)=> {
         formattedCardNumber = cardNumberSections.join(' ');
     }
 
-    console.log("'"+ cardNumber + "' to '" + formattedCardNumber + "'");
-
     // If the formmattedCardNumber is different to what is shown, change the value
     if (cardNumber !== formattedCardNumber) {
         txtCardNumber.value = formattedCardNumber;
@@ -71,3 +69,13 @@ const unitChange = () => {
 month.addEventListener('input', unitChange);
 year.addEventListener('input', unitChange);
 
+const cvcOnCard = document.querySelector('.cvc-on-card')
+const cvcSignUp = document.querySelector('#cvc')
+cvcSignUp.addEventListener('input', (ev)=>{
+    const inputValue = ev.target.value
+    cvcOnCard.value = inputValue
+})
+
+document.getElementById('cvc').addEventListener('click', ()=> {
+    document.querySelector('.flip-card').classList.toggle('flipped');
+});
