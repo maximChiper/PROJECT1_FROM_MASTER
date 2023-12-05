@@ -79,3 +79,4 @@ cvcSignUp.addEventListener('input', (ev)=>{
 document.getElementById('cvc').addEventListener('click', ()=> {
     document.querySelector('.flip-card').classList.toggle('flipped');
 });
+
