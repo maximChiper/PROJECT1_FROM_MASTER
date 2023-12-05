@@ -6,29 +6,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="bank-card">
-    <div class="imgs-top">
-        <img src="img/680284.png" class="chip">
-        <div class="logo "></div>
-        <div class="logo2 "></div>
-        <div class="logo3 "></div>
-    </div>
-    <div>
-        <input id="nrs-on-card" inputmode="numeric" type="text" placeholder="####  ####  ####  ####" disabled>
-        <div class="fixate-on-end">
-            <input id="name-on-card" type="text" placeholder="ADD NAME" disabled>
-            <input id="year-mounth-on-card" type="text" placeholder="MM/YY" name="input" maxlength="5">
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <div class="imgs-top">
+                <img src="img/680284.png" class="chip">
+                <img src="./img/discoverLogo.png" alt="" class="logo ">
+                <img src="./img/masterCard.png" alt="" class="logo2 ">
+               <img src="./img/visaLogo.png" alt="" class="logo3 ">
+            </div>
+            <div>
+                <input id="nrs-on-card" inputmode="numeric" type="text" placeholder="####  ####  ####  ####" disabled>
+                <div class="fixate-on-end">
+                    <input id="name-on-card" type="text" placeholder="ADD NAME" disabled>
+                    <input id="year-mounth-on-card" type="text" placeholder="MM/YY" name="input" maxlength="5">
+                </div>
+            </div>        </div>
+        <div class="flip-card-back">
+            <div class="black-line"></div>
+            <div class="wight-line">
+                <input type="text" class="cvc-on-card">
+            </div>
+            <div class="logo-on-back"></div>
         </div>
     </div>
 </div>
-<div class="bank-card-back">
-    <div class="black-line"></div>
-    <div class="wight-line">
-        <input type="text" class="cvc-on-card">
-    </div>
-    <div class="logo-on-back"></div>
-</div>
-
 <div class="sign-up-card">
     <div class="sign-up">
         <label>Card Number
@@ -71,7 +74,7 @@
             </div>
             <div class="cvc">
                 <label>CVC</label>
-                <input type="text" maxlength="4">
+                <input type="text" maxlength="4" id="cvc">
             </div>
         </div>
         <div class="button-placement">

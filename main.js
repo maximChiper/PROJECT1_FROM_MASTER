@@ -64,12 +64,10 @@ const month  = document.querySelector('#month')
 
 const year = document.querySelector('#year')
 
- year.addEventListener('input', (ev)=>{
-    const inputValue2 = ev.target.value
-     inputOnyear +=inputValue2
-})
-let inputOnyear = ''
-month.addEventListener('input', (ev)=>{
-    const inputValue = ev.target.value
-    yearMonthOnCard.value = inputValue+'/'+inputOnyear
-})
+const unitChange = () => {
+    yearMonthOnCard.value = month.value + '/' + year.value;
+};
+
+month.addEventListener('input', unitChange);
+year.addEventListener('input', unitChange);
+

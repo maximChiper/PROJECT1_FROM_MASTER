@@ -31,7 +31,7 @@ label {
     width: 400px;
     height: 400px;
     background-color: #fff;
-    margin-top: 110px;
+    margin-top: -80px;
     border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -53,40 +53,46 @@ label {
     height: 60px;
     margin: 10px 15px;
 }
+@keyframes flow  {
+    0%{ .logo
+    }
+    50%{.logo2{
+    }
+    }
+    100%{.logo3{
+    }
+        }
+}
+
 
 .logo {
     width: 100px;
-    height: 18px;
-    background-image: url(./img/discoverLogo.png);
-    background-size: 100%;
+    height: 20px;
     position: relative;
-    animation: appearDisappear 3s;
+    margin-top: 30px;
+    margin-right: 10px;
     /*display: none;*/
-    margin: 30px 15px;
 
 }
-
 .logo2 {
     width: 50px;
     height: 40px;
-    background-image: url(./img/masterCard.png);
-    background-size: cover;
     position: relative;
-    margin: 10px 15px;
-    animation: appearDisappear 3s;
     display: none;
+    margin-top: 20px;
+    margin-right: 20px;
 }
-
 .logo3 {
     width: 70px;
-    height: 39px;
-    background-image: url(./img/visaLogo.png);
-    background-size: cover;
+    height: 60px;
     position: relative;
-    animation: appearDisappear 3s;
     display: none;
-    margin: 20px 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+
 }
+
+
 
 .imgs-top {
     display: flex;
@@ -237,4 +243,52 @@ label {
     width: 110px;
     background-size: cover;
     margin-left: 180px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-image: url("img/pic1.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-image: url("img/pic1.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: rotateY(180deg);
 }
