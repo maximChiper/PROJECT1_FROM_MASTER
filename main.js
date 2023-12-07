@@ -52,7 +52,7 @@ const cardNameOnCard = document.querySelector("#name-on-card")
 
 cardName.addEventListener('input', (ev)=>{
     const inputValue = ev.target.value
-    cardNameOnCard.value = inputValue
+    cardNameOnCard.value = inputValue.toUpperCase()
 })
 
 
